@@ -9,19 +9,6 @@ document.querySelectorAll("a[href^='#']").forEach(anchor => {
   });
 });
 
-// Back to Top button functionality
-const backToTopBtn = document.querySelector(".back-to-top");
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    backToTopBtn.classList.add("show");
-  } else {
-    backToTopBtn.classList.remove("show");
-  }
-});
-backToTopBtn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
 // Form validation (basic)
 document.querySelector("form").addEventListener("submit", function (e) {
   const inputs = this.querySelectorAll("input, textarea");
@@ -39,4 +26,14 @@ document.querySelector("form").addEventListener("submit", function (e) {
     alert("Please fill out all fields.");
   }
 });
- window.location.href = `mailto:deenadhayal0705@gmail.com?subject=...`;
+
+// Email handler
+function sendEmail(event) {
+  event.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+  const subject = `Message from ${name}`;
+  const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
+  window.location.href = `mailto:deenadhayal0705@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+}
