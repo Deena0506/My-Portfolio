@@ -97,11 +97,17 @@ a {
 .btn:hover {
   transform: scale(1.05);
 }
-.home-img img {
-  width: 300px;
+.home-img img,
+.about-img img {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  box-shadow: 0 0 30px rgba(255,127,80,0.6);
+  object-fit: cover;
+  aspect-ratio: 1 / 1; /* Ensures a 1:1 aspect ratio */
+  box-shadow: 0 0 30px rgba(255,127,80,0.5); /* Optional glow */
 }
+
+
 /* ====== ABOUT ====== */
 .about {
   display: flex;
