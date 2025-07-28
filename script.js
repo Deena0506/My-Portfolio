@@ -67,25 +67,36 @@ if (menuToggle) {
     nav.classList.toggle("active");
   });
 }
-// ===== Typewriter Effect =====
-const typeText = ["Web Developer", "UI Designer", "Content Creator"]; // customize your roles
+const typeText = ["Web Developer", "UI Designer", "Content Creator"];
 let count = 0;
 let index = 0;
 let currentText = "";
-let letter = "";
+let isDeleting = false;
 
 (function type() {
+  const typedElement = document.querySelector(".typed-text");
+
   if (count === typeText.length) count = 0;
   currentText = typeText[count];
-  letter = currentText.slice(0, ++index);
 
-  document.querySelector(".typed-text").textContent = letter;
-
-  if (letter.length === currentText.length) {
-    count++;
-    index = 0;
-    setTimeout(type, 1000); // pause before next word
+  if (isDeleting) {
+    index--;
+    typedElement.textContent = currentText.substring(0, index);
   } else {
-    setTimeout(type, 120); // typing speed
+    index++;
+    typedElement.textContent = currentText.substring(0, index);
   }
+
+  let typingSpeed = isDeleting ? 50 : 100;
+
+  if (!isDeleting && index === currentText.length) {
+    typingSpeed = 1200; // pause at full word
+    isDeleting = true;
+  } else if (isDeleting && index === 0) {
+    isDeleting = false;
+    count++;
+    typingSpeed = 400;
+  }
+
+  setTimeout(type, typingSpeed);
 })();

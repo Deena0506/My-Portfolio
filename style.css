@@ -298,3 +298,16 @@ a {
     align-items: center;
   }
 }
+.typed-text {
+  font-weight: bold;
+  color: var(--accent-color); /* or a custom one */
+  border-right: 2px solid var(--accent-color);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: var(--accent-color); }
+}
