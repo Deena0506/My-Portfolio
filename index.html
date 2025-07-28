@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deena's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Deena's Portfolio<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Deenadhayal</h1>
+      <h4>And I'm a <span>Web Developer</span></h4>
+      <p>I’m a Web Developer with a passion for glowing UI and responsive web design.</p>
+
+      <div class="social-icons">
+        <a href="https://youtube.com/@deezone5?si=j2pwOv8-8L8C0hi8" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://wa.me/919344547363" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/rj_deenadhayal?igsh=cHM0ZWZ6eWR3OXlu" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/deenadhayal-k-a-906359232" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <a href="#about" class="btn">More About Me</a>
+    </div>
+    <div class="home-img">
+      <img src="deena's pic.jpg" alt="Profile Picture" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-content">
+      <div class="about-img">
+        <img src="deena's pic.jpg" alt="About Image">
+      </div>
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h3>Web Developer!</h3>
+        <p>I am a passionate Web developer with hands-on experience in creating responsive websites and web applications. I love turning ideas into reality using modern technologies and clean code. With a strong focus on both design and functionality, I build projects that are user-friendly, efficient, and visually appealing. My goal is to grow as a developer while helping businesses establish their digital presence.</p>
+        <a href="#experience" class="btn">More About Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="experience-container">
+      <h2 class="section-title">My <span>Experience</span></h2>
+      <div class="experience-timeline">
+        <div class="experience-item">
+          <span class="exp-year">July 2025 - Present</span>
+          <h3>Web Developer Intern at Cognifyz Technologies</h3>
+          <p>Contributing to live projects with a focus on building responsive user interfaces, interactive web features, and optimized design using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="experience-item">
+          <span class="exp-year">July 2024 - August 2024</span>
+          <h3>Full Stack Developer Intern at Accent Technosoft</h3>
+          <p>Worked on both frontend and backend development using React.js, Node.js, and MongoDB. Implemented CRUD operations, dynamic routing, and API integration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="skills-container">
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Firebase</div>
+        <div class="skill-card">Flutter</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">MongoDB</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="projects-container">
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Vehicle Breakdown Assistance System for On-Road </h3>
+          <p>A cross-platform Flutter app that connects stranded drivers with nearby service providers. Integrated with Firebase, OpenStreetMap, and real-time location tracking.</p>
+        </div>
+        <div class="project-card">
+          <h3>Personal Portfolio Website</h3>
+          <p>Designed and developed my personal responsive portfolio using HTML, CSS, and glowing UI components for a modern, professional look.</p>
+        </div>
+        <div class="project-card">
+          <h3>Business Website for Local Store</h3>
+          <p>Created a clean, mobile-friendly website for a local shop using HTML, CSS, and JavaScript. Included contact form, product showcase, and smooth navigation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <h2 class="section-title">Get in <span>Touch</span></h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:deenadhayal0705@gmail.com">deenadhayal0705@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+919344547363">+91 93445 47363</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/deenadhayal-k-a-906359232" target="_blank">linkedin.com/Deenadhayal</a></p>
+      </div>
+
+      <form id="contact-form" class="contact-form" onsubmit="sendEmail(event)">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    function sendEmail(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const subject = `Message from ${name}`;
+      const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
+      window.location.href = `mailto:deenadhayal0705@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
