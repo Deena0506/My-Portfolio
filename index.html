@@ -1,145 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deena's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Deenadhayal | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .glow-skill:hover,
+    .hover\:text-white:hover,
+    .glow-input:focus {
+      box-shadow: 0 0 8px #fb923c, 0 0 16px #fb923c;
+      outline: none;
+    }
+  </style>
 </head>
-<body>
+
+<body class="bg-gray-900 text-orange-400">
   <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Deenadhayal<span>.</span></div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+
+<nav class="bg-gray-900 text-white px-4 py-3 sticky top-0 z-50 shadow-md">
+  <div class="container mx-auto flex flex-wrap items-center justify-between">
+    <a href="#" class="text-xl font-bold text-white">Deena 👋</a>
+    <div class="flex flex-wrap gap-4 text-sm mt-2 sm:mt-0">
+      <a href="#home" class="hover:text-orange-300 transition-all duration-200">Home</a>
+      <a href="#about" class="hover:text-orange-300 transition-all duration-200">About</a>
+      <a href="#skills" class="hover:text-orange-300 transition-all duration-200">Skills</a>
+      <a href="#projects" class="hover:text-orange-300 transition-all duration-200">Projects</a>
+      <a href="#experience" class="hover:text-orange-300 transition-all duration-200">Experience</a>
+      <a href="#contact" class="hover:text-orange-300 transition-all duration-200">Contact</a>
+    </div>
+  </div>
+</nav>
+
 
   <!-- Home Section -->
-  <section id="home" class="home">
-    <div class="home-content">
-      <h3 class="home-title">Hi, I'm a <span class="typed-text"></span></h3>
-      <h2>Deenadhayal</h2>
-      <p>I’m a Web Developer with a passion for glowing UI and responsive web design.</p>
-      <div class="social-icons">
-        <a href="https://youtube.com/@deezone5?si=j2pwOv8-8L8C0hi8" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://wa.me/919344547363" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.instagram.com/rj_deenadhayal?igsh=cHM0ZWZ6eWR3OXlu" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/deenadhayal-k-a-906359232" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      <a href="#about" class="btn">More About Me</a>
-    </div>
-    <div class="home-img">
-      <img src="media.jpeg" alt="Profile Picture" />
-    </div>
-  </section>
+  <!-- Add Font Awesome to your <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="about-content">
-      <div class="about-img">
-        <img src="deena's pic.jpg" alt="About Image">
-      </div>
-      <div class="about-text">
-        <h2>About <span>Me</span></h2>
-        <h3>Web Developer!</h3>
-        <p>I am a passionate Web Developer with hands-on experience in building responsive websites and dynamic web applications.
-I enjoy turning ideas into user-friendly digital solutions using modern technologies like HTML, CSS, JavaScript, and React.js. With a strong foundation in front-end and back-end development, I’m dedicated to creating clean, efficient, and visually appealing web experiences that perform seamlessly across all devices..</p>
-        <a href="#experience" class="btn">More About Me</a>
-      </div>
-    </div>
-  </section>
+<section id="home" class="text-center bg-gray-900 py-12 px-4">
+  <img src="deena's pic.jpg" alt="Deena" class="mx-auto w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-orange-500 shadow-lg mb-4" />
+  
+  <h1 class="text-2xl md:text-3xl font-bold text-orange-400">
+    Hi, I'm <span id="typed-text" class="text-orange"></span>
+  </h1>
+  
+  <p class="text-base md:text-lg text-blue-300 mt-2">
+    Web Developer | UI Designer | Content Creator
+  </p>
+<p class="text-base md:text-xl text-gray-200 mt-6 max-w-2xl mx-auto leading-relaxed font-medium px-2">
+  <span class="text-orange-400 font-semibold">I'm Deenadhayal</span>, a passionate Full Stack Developer with an engineering mindset and a creative spark.
+  I specialize in building responsive, user-friendly websites with <span class="text-orange-300">glowing UI aesthetics</span> and smooth interactivity.
+  Whether it’s crafting pixel-perfect layouts or producing engaging content, I love transforming ideas into stunning digital experiences through
+  <span class="text-blue-300">clean, efficient code</span> and <span class="text-blue-300">powerful storytelling</span>.
+</p>
 
-  <!-- Experience Section -->
-  <section id="experience" class="experience">
-    <div class="experience-container">
-      <h2 class="section-title">My <span>Experience</span></h2>
-      <div class="experience-timeline">
-        <div class="experience-item">
-          <span class="exp-year">July 2025 - Present</span>
-          <h3>Web Developer Intern at Cognifyz Technologies</h3>
-          <p>During my internship at Cognifyz Technologies, I contributed to building responsive web applications using HTML, CSS, JavaScript, and React.js. I collaborated with the development team to enhance user interfaces, optimize performance, and ensure cross-browser compatibility. This experience helped me strengthen my practical skills and understand real-world development workflows.</p>
-        </div>
-        <div class="experience-item">
-          <span class="exp-year">July 2024 - August 2024</span>
-          <h3>Full Stack Developer Intern at Accent Technosoft</h3>
-          <p>As a Full Stack Developer Intern at Accent Technosoft, I worked on developing and maintaining dynamic web applications using technologies like HTML, CSS, JavaScript, and Node.js. I was involved in both front-end and back-end development, database integration, and API handling. This role enhanced my ability to build scalable, end-to-end solutions and deepened my understanding of full-stack development practices.</p>
-        </div>
-      </div>
+  <!-- Social Media Icons (Twitter Removed) -->
+  <div class="flex justify-center mt-6 space-x-6 text-xl">
+    <a href="https://github.com/deena0506" target="_blank" class="text-gray-300 hover:text-orange-400 transition-all duration-300">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/deenadhayal-k-a-906359232" target="_blank" class="text-gray-300 hover:text-orange-400 transition-all duration-300">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://www.instagram.com/rj_deenadhayal?igsh=cHM0ZWZ6eWR3OXlu" target="_blank" class="text-gray-300 hover:text-orange-400 transition-all duration-300">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="mailto:deenadhayal0705@gmail.com" class="text-gray-300 hover:text-orange-400 transition-all duration-300">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</section>
+
+<section id="about" class="bg-gray-950 text-white py-16 px-4">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-10 max-w-6xl">
+    
+    <!-- Image Section -->
+    <div class="w-full md:w-1/2">
+      <img src="media.jpeg" alt="About Me"
+        class="rounded-2xl shadow-2xl border-4 border-orange-500 mx-auto w-48 h-48 md:w-64 md:h-64 object-cover hover:scale-105 transition-transform duration-500" />
     </div>
-  </section>
+
+    <!-- Text Section -->
+    <div class="w-full md:w-1/2 text-center md:text-left">
+      <h2 class="text-3xl md:text-4xl font-bold text-orange-400 mb-4">About Me</h2>
+      <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+        Recent graduate from <span class="text-orange-300 font-semibold">CSI College of Engineering</span> with a degree in Information Technology.
+        A motivated and adaptable individual with a strong passion for technology and a keen interest in launching a career in the tech industry.
+      </p>
+      <p class="mt-4 text-md md:text-lg text-blue-300">
+        Committed to continuous learning and professional growth. Strong believer in teamwork and collaboration, with the ability to contribute effectively to group efforts and organizational goals.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
 
   <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <div class="skills-container">
-      <h2 class="section-title">My <span>Skills</span></h2>
-      <div class="skills-grid">
-        <div class="skill-card">HTML5</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Firebase</div>
-        <div class="skill-card">Flutter</div>
-        <div class="skill-card">Git & GitHub</div>
-        <div class="skill-card">MongoDB</div>
-      </div>
+  <section id="skills" class="py-12 px-4 container mx-auto bg-gray-800 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-6 text-center text-orange-300">Skills</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+      <span class="px-4 py-2 bg-orange-900 rounded-full glow-skill">HTML</span>
+      <span class="px-4 py-2 bg-orange-900 rounded-full glow-skill">CSS</span>
+      <span class="px-4 py-2 bg-orange-900 rounded-full glow-skill">JavaScript</span>
+      <span class="px-4 py-2 bg-orange-900 rounded-full glow-skill">UI Designer</span>
+      <span class="px-4 py-2 bg-orange-900 rounded-full glow-skill">Flutter</span>
+      <span class="px-4 py-2 bg-orange-900 rounded-full glow-skill">Firebase</span>
+      <span class="px-4 py-2 bg-orange-900 rounded-full glow-skill">Content Creator</span>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="projects-container">
-      <h2 class="section-title">My <span>Projects</span></h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Vehicle Breakdown Assistance System for On Road</h3>
-          <p>This cross-platform mobile application is designed to help vehicle users during unexpected breakdowns by connecting them with nearby service providers in real-time. Built using Flutter and integrated with Firebase, Google Maps, and OTP/Google authentication, the app enables users to share their live location, request assistance, and track service status. The system ensures timely help and improves safety and convenience for drivers on the road.</p>
-        </div>
-        <div class="project-card">
-          <h3>Personal Portfolio Website</h3>
-          <p>A responsive and interactive portfolio website built to showcase my projects, skills, and experiences as a web developer. Designed with HTML, CSS, and JavaScript, the site features smooth navigation, glowing UI effects, and a modern layout. It highlights my development journey, internship experiences, and project work, serving as a professional online presence to connect with potential employers and collaborators.</p>
-        </div>
-        <div class="project-card">
-          <h3>Business Website for Local Store</h3>
-          <p>Developed a user-friendly and responsive website for a local store to enhance its online presence and customer reach. The site includes key features such as product listings, contact forms, and store information. Built using HTML, CSS, and JavaScript, the website helps customers easily browse products and connect with the store, improving visibility and accessibility.</p>
-        </div>
+
+ <section id="projects" class="py-12 px-4 container mx-auto bg-gray-900">
+  <h2 class="text-2xl font-semibold mb-6 text-center text-orange-300">Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
+    <div class="bg-gray-800 p-6 rounded-lg shadow-md glow-card w-full max-w-sm">
+      <h3 class="text-lg font-bold text-orange-400">Vehicle Breakdown Assistance System</h3>
+      <p class="text-orange-300">A mobile app built using Flutter and Firebase for roadside assistance services with live tracking and support.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-md glow-card w-full max-w-sm">
+      <h3 class="text-lg font-bold text-orange-400">Business Website for Local Store</h3>
+      <p class="text-orange-300">Designed and developed a clean, mobile-responsive website to increase visibility and customer engagement.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-md glow-card w-full max-w-sm">
+      <h3 class="text-lg font-bold text-orange-400">House Price Prediction</h3>
+      <p class="text-orange-300">Machine learning model using Python and Scikit-learn to predict house prices with high accuracy.</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Experience Section -->
+<section id="experience" class="py-12 px-4 container mx-auto bg-gray-900">
+  <h2 class="text-2xl font-semibold mb-6 text-center text-orange-300">Experience</h2>
+  <div class="space-y-6">
+    <div class="flex flex-wrap items-center gap-4 bg-gray-800 p-4 rounded-lg shadow-md glow-card">
+      <img src="co.png" alt="Cognifyz" class="w-16 h-16 object-contain" />
+      <div>
+        <h3 class="text-lg font-bold text-orange-400">Web Development Intern</h3>
+        <p class="text-orange-300">Cognifyz Technologies: July - Present</p>
       </div>
     </div>
-  </section>
+    <div class="flex flex-wrap items-center gap-4 bg-gray-800 p-4 rounded-lg shadow-md glow-card">
+      <img src="ATS.jpg" alt="Accent" class="w-16 h-16 object-contain" />
+      <div>
+        <h3 class="text-lg font-bold text-orange-400">Full Stack Web Development Intern</h3>
+        <p class="text-orange-300">Accent Technosoft: July - August 2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="contact-container">
-      <h2 class="section-title">Get in <span>Touch</span></h2>
-      <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:deenadhayal0705@gmail.com">deenadhayal0705@gmail.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+919344547363">+91 93445 47363</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/deenadhayal-k-a-906359232" target="_blank">linkedin.com/Deenadhayal</a></p>
+  <section id="contact" class="py-12 px-4 container mx-auto bg-gray-800 rounded-lg">
+    <h2 class="text-2xl font-semibold mb-6 text-center text-orange-300">Contact</h2>
+    <form class="max-w-md mx-auto">
+      <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 rounded glow-input bg-gray-900 text-orange-400 border border-orange-500" />
+      <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded glow-input bg-gray-900 text-orange-400 border border-orange-500" />
+      <textarea placeholder="Your Message" class="w-full p-3 mb-4 rounded glow-input bg-gray-900 text-orange-400 border border-orange-500"></textarea>
+      <button type="submit" class="px-6 py-2 bg-orange-500 text-white font-semibold rounded hover:bg-orange-600">Send</button>
+    </form>
+   
+      <div class="flex justify-center space-x-6 mt-4">
+        <a href="9344547363" target="_blank" class="text-orange-400 hover:text-white">Mobile</a>
+        <a href="deenadhayal0705@gmail.com" target="_blank" class="text-orange-400 hover:text-white">Email</a>
+        <a href="https://github.com/deena0506" target="_blank" class="text-orange-400 hover:text-white">GitHub</a>
+        <a href="https://www.linkedin.com/in/deenadhayal-k-a-906359232" target="_blank" class="text-orange-400 hover:text-white">LinkedIn</a>
+        <a href="https://www.instagram.com/rj_deenadhayal?igsh=cHM0ZWZ6eWR3OXlu" target="_blank" class="text-orange-400 hover:text-white">Instagram</a>
       </div>
-
-      <form id="contact-form" class="contact-form" onsubmit="sendEmail(event)">
-        <div class="form-group">
-          <input type="text" id="name" name="name" placeholder="Your Name" required />
-        </div>
-        <div class="form-group">
-          <input type="email" id="email" name="email" placeholder="Your Email" required />
-        </div>
-        <div class="form-group">
-          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="btn submit-btn">Send Message</button>
-      </form>
-    </div>
+    
   </section>
-  <script defer src="script.js"></script>
+
+<script>
+  const titles = ["Web Developer", "UI Designer", "Content Creator"];
+  let i = 0;
+  let j = 0;
+  let isDeleting = false;
+  let current = "";
+  let pauseEnd = false;
+
+  function typeEffect() {
+    const typedText = document.getElementById("typed-text");
+    current = titles[i % titles.length];
+
+    if (!isDeleting && j <= current.length) {
+      typedText.textContent = current.substring(0, j++);
+    } else if (isDeleting && j >= 0) {
+      typedText.textContent = current.substring(0, j--);
+    }
+
+    let speed = isDeleting ? 80 : 120;
+
+    // Pause after typing full word
+    if (!isDeleting && j === current.length + 1 && !pauseEnd) {
+      pauseEnd = true;
+      setTimeout(() => {
+        isDeleting = true;
+        pauseEnd = false;
+        typeEffect();
+      }, 1500); // 1.5 sec pause
+      return;
+    }
+
+    // Move to next title after deleting
+    if (isDeleting && j === 0) {
+      isDeleting = false;
+      i++;
+    }
+
+    setTimeout(typeEffect, speed);
+  }
+
+  document.addEventListener("DOMContentLoaded", typeEffect);
+</script>
 
 </body>
+
 </html>
