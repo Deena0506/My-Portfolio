@@ -39,8 +39,11 @@ nav a:hover {
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #0f172a; /* dark navy background */
+  background-color: #000000; 
   color: #e2e8f0; /* light gray text */
+}
+body {
+  background-color: #121212;
 }
 
 /* Smooth scroll for internal links */
