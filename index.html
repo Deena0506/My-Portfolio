@@ -31,9 +31,20 @@
   <!-- Navbar -->
 
 <nav class="bg-gray-900 text-white px-4 py-3 sticky top-0 z-50 shadow-md">
-  <div class="container mx-auto flex flex-wrap items-center justify-between">
+  <div class="container mx-auto flex items-center justify-between">
     <a href="#" class="text-xl font-bold text-white">Deena 👋</a>
-    <div class="flex flex-wrap gap-4 text-sm mt-2 sm:mt-0">
+
+    <!-- Hamburger button (visible on small screens) -->
+    <button id="menu-toggle" class="sm:hidden text-white focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!-- Main nav links for larger screens -->
+    <div class="hidden sm:flex gap-4 text-sm">
       <a href="#home" class="hover:text-orange-300 transition-all duration-200">Home</a>
       <a href="#about" class="hover:text-orange-300 transition-all duration-200">About</a>
       <a href="#skills" class="hover:text-orange-300 transition-all duration-200">Skills</a>
@@ -42,7 +53,24 @@
       <a href="#contact" class="hover:text-orange-300 transition-all duration-200">Contact</a>
     </div>
   </div>
+
+  <!-- Sliding mobile menu -->
+   <script src="navbar.js"></script>
+
+  <div id="mobile-menu"
+    class="fixed top-0 right-0 h-full w-64 bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-40 sm:hidden p-6">
+    <button id="menu-close" class="text-right w-full text-xl mb-6 text-orange-400">✕ Close</button>
+    <nav class="flex flex-col space-y-4">
+      <a href="#home" class="hover:text-orange-300">Home</a>
+      <a href="#about" class="hover:text-orange-300">About</a>
+      <a href="#skills" class="hover:text-orange-300">Skills</a>
+      <a href="#projects" class="hover:text-orange-300">Projects</a>
+      <a href="#experience" class="hover:text-orange-300">Experience</a>
+      <a href="#contact" class="hover:text-orange-300">Contact</a>
+    </nav>
+  </div>
 </nav>
+
 
 
   <!-- Home Section -->
@@ -266,23 +294,37 @@
   <!-- Experience Section -->
 <section id="experience" class="py-12 px-4 container mx-auto bg-gray-900">
   <h2 class="text-2xl font-semibold mb-6 text-center text-orange-300">Experience</h2>
+  
+  <!-- Wrapper for spacing between cards -->
   <div class="space-y-6">
+
     <div class="flex flex-wrap items-center gap-4 bg-gray-800 p-4 rounded-lg shadow-md glow-card">
-      <img src="co.png" alt="Cognifyz" class="w-16 h-16 object-contain" />
+      <img src="Skillwinner.jpg" alt="Skill Winner" class="w-16 h-16 object-contain" />
       <div>
-        <h3 class="text-lg font-bold text-orange-400">Web Development Intern</h3>
-        <p class="text-orange-300">Cognifyz Technologies: July - Present</p>
+        <h3 class="text-lg font-bold text-orange-400">Web Development</h3>
+        <p class="text-orange-300">Skill Winner: February - April 2024</p>
       </div>
     </div>
+
     <div class="flex flex-wrap items-center gap-4 bg-gray-800 p-4 rounded-lg shadow-md glow-card">
       <img src="ATS.jpg" alt="Accent" class="w-16 h-16 object-contain" />
       <div>
-        <h3 class="text-lg font-bold text-orange-400">Full Stack Web Development Intern</h3>
+        <h3 class="text-lg font-bold text-orange-400">Full Stack Web Development</h3>
         <p class="text-orange-300">Accent Technosoft: July - August 2024</p>
       </div>
     </div>
+
+    <div class="flex flex-wrap items-center gap-4 bg-gray-800 p-4 rounded-lg shadow-md glow-card">
+      <img src="co.png" alt="Cognifyz" class="w-16 h-16 object-contain" />
+      <div>
+        <h3 class="text-lg font-bold text-orange-400">Web Developer Intern</h3>
+        <p class="text-orange-300">Cognifyz Technologies: July - Present</p>
+      </div>
+    </div>
+
   </div>
 </section>
+
 
 
   <!-- Contact Section -->

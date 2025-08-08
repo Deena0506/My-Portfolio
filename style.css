@@ -6,7 +6,7 @@
 }
 
 .glow-skill:hover {
-  box-shadow: 0 0 10px rgba(251, 146, 60, 0.8), 0 0 20px rgba(251, 146, 60, 0.6); /* orange glow */
+  box-shadow: 0 0 10px rgba(251, 146, 60, 0.8), 0 0 20px rgba(251, 146, 60, 0.8); /* orange glow */
   transform: scale(1.05);
 }
 
@@ -124,3 +124,4 @@ a.button:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 15px rgba(255, 165, 0, 0.5); /* orange glow */
 }
+
